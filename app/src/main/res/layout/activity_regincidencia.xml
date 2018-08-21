@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/fondoprincipal">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:id="@+id/aa"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    app:titleTextAppearance="@style/Toolbar.TitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/white"
+                    app:title="Nuevo Incidente"
+                    app:navigationIcon="?homeAsUpIndicator"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                    <ImageView
+                        android:src="@drawable/secondary"
+                        android:layout_width="130dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp" />
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/textNormalStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="textStart"
+                            android:text="Su dirección elegida: "
+                            android:textColor="@color/colorPrimary"
+                            android:padding="6dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16dp"
+                            android:gravity="start" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="27dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/gps" />
+                            <TextView
+                                android:id="@+id/txtDirecElegida"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:background="@drawable/text_primary_border"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="20dp"
+                                android:paddingTop="6dp"
+                                android:paddingBottom="6dp"  />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+                        <RadioGroup
+                            android:id="@+id/radioGroup2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="horizontal" >
+                            <RadioButton
+                                android:id="@+id/rdInundacion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="Inundación" />
+                            <RadioButton
+                                android:id="@+id/rdObstaculizacion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:layout_marginLeft="10dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:text="Obstaculización Calles" />
+                        </RadioGroup>
+
+                        <TextView
+                            style="@style/textNormalStyle"
+                            android:id="@+id/txtTituloOpt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PROFUNDIDAD DEL AGUA"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+
+                    <!-- INUNDACION -->
+                    <LinearLayout
+                        android:id="@+id/cntInundacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp">
+                                <ImageView
+                                    android:id="@+id/imgPersInundada"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="180dp"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/nivel_pies"  />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true">
+
+                                <SeekBar
+                                    android:id="@+id/sbNivelInund"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="80dp"
+                                    android:layout_marginStart="50dp"
+                                    android:max="7"
+                                    android:progress="1"
+                                    android:layout_gravity="top"
+                                    android:progressBackgroundTint="@color/colorAccent"
+                                    android:progressDrawable="@drawable/custom_seekbar"
+                                    android:rotation="270"
+                                    android:thumb="@drawable/custom_thumb"
+                                    android:layout_marginLeft="50dp" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="200dp"
+                                android:layout_marginLeft="200dp">
+
+                                <ListView
+                                    android:id="@+id/rvNivelAgua"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:divider="@null"
+                                    android:dividerHeight="0dp"
+                                    tools:listitem="@layout/item_nivlesagua"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/cntInundacions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:layout_margin="5dp">
+                        <ImageView
+                            android:id="@+id/imgPersInundadas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="180dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:src="@drawable/nivel_pies"  />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <SeekBar
+                                android:id="@+id/sbNivelInunds"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:progress="1"
+                                android:max="7"
+                                android:rotation="270"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentBottom="true"
+                                android:progressDrawable="@drawable/custom_seekbar"
+                                android:thumb="@drawable/custom_thumb"
+                                android:layout_marginTop="80dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ListView
+                                android:id="@+id/rvNivelAguas"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:divider="@null"
+                                android:dividerHeight="0dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentBottom="true"
+                                tools:listitem="@layout/item_nivlesagua">
+                            </ListView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- OBSTACULIZACION -->
+                    <LinearLayout
+                        android:id="@+id/cntObstaculizacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+                        <GridView
+                            android:id="@+id/gvTiposObstaculo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:numColumns="3"
+                            android:verticalSpacing="8dp"
+                            android:horizontalSpacing="18dp"
+                            android:stretchMode="columnWidth"
+                            android:gravity="center"
+                            android:padding="5dp">
+                        </GridView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:rotation="-90"
+                            android:padding="10dp">
+
+                            <com.adyl.aylludamos.utils.SeekbarWithIntervals
+                                android:id="@+id/seekbarWithIntervals"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                >
+                            </com.adyl.aylludamos.utils.SeekbarWithIntervals>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="vertical">
+
+                        <com.adyl.aylludamos.utils.CustomSearchableSpinner
+                            android:id="@+id/spUrbanizacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/spinner"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Descripción :" />
+
+                        <EditText
+                            android:id="@+id/txtDescripcion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:alpha="1" />
+
+
+                        <TextView
+                            android:id="@+id/txtDescNroCantEnvMultimedia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
+                            android:text="La cantidad máxima de archivos multimedia es: 3" />
+
+                        <TextView
+                            android:id="@+id/txtDescNroPeso"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
+                            android:text="Peso máximo de cada archivo multimedia es: 3mb" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:background="@color/colorAccent"
+                                android:text="@string/v_media"
+                                android:textColor="@color/white"
+                                android:padding="10dp"
+                                android:textStyle="bold|normal"/>
+
+
+                            <ImageView
+                                android:id="@+id/btnMasArchivos"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_agregar" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/lblErrorMedia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvMedia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:listitem="@layout/item_incidencia"
+                                android:scrollbars="horizontal"
+                                android:orientation="horizontal"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/btnRegresar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/regresar"
+                            android:background="@drawable/button_style"
+                            android:textColor="@color/white"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:visibility="gone" />
+                        <Button
+                            android:id="@+id/btnEnviar"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/enviar"
+                            android:background="@drawable/button_style"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>

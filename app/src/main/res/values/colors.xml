@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED1C24</color>
+    <color name="colorPrimaryDark">#C1272D</color>
+    <color name="colorAccent">#999999</color>
+
+    <color name="gris">#797879</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="plomo">#575756</color>
+    <color name="blue">#1976D2</color>
+    <color name="celeste">#009FE3</color>
+    <color name="transparent">#00000000</color>
+</resources>

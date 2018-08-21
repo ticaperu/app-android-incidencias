@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.adyl.aylludamos.utils.Maps.TouchableMapFragment"
+                        android:layout_width="match_parent"
+                        android:launchMode="singleInstance"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.7"
+                                android:background="@color/white"
+                                android:orientation="horizontal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/etBuscar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:alpha="1"
+                                    android:hint="¿Dónde estoy?"
+                                    android:inputType="textPersonName"
+                                    android:lines="1"
+                                    android:visibility="visible" />
+
+                                <Button
+                                    android:id="@+id/btnBuscar"
+                                    android:layout_width="70dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/button_style"
+                                    android:text="Ir"
+                                    android:textColor="@color/white"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="55dp"
+                            android:alpha="0.7"
+                            android:background="@color/colorPrimary"
+                            android:gravity="top"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:id="@+id/tvDireccion"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textAlignment="center"
+                                android:textStyle="italic|bold"
+                                android:textColor="@color/white" />
+
+                            <com.pnikosis.materialishprogress.ProgressWheel
+                                android:id="@+id/progress_wheel"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                wheel:matProg_barColor="@color/colorPrimary"
+                                wheel:matProg_barWidth="2dp"
+                                wheel:matProg_progressIndeterminate="true" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/mark"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:paddingBottom="20dp"
+                            android:src="@drawable/gps" />
+                    </fragment>
+
+                </LinearLayout>
+            </android.support.v7.widget.LinearLayoutCompat>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_gravity="top"
+                android:gravity="top">
+
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_style"
+                    android:text="@string/registrar_ubicaci_n"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

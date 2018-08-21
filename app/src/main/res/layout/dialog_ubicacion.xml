@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_general"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="2"
+                android:text="REGISTRO DE UBICACIÓN ACTUAL"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="12dp"
+                android:text="Detalle de ubicacíon: "/>
+            <EditText
+                android:id="@+id/etDialogDireccion"
+                style="@style/textNormalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="5dp"
+                android:background="@drawable/text_degradado"
+                android:textSize="15dp"
+                android:lines="2"
+                android:textColor="@color/colorAccent"
+                android:minLines="1"
+                android:text=""/>
+
+
+
+            <LinearLayout
+                android:id="@+id/llMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/maps">
+
+                    <ImageView
+                        android:id="@+id/check"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="start|center"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/check"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.4"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tvSeñalar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="2dp"
+                        android:gravity="center|center_vertical"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="Mi ubicación" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:background="@drawable/button_style"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

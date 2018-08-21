@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">AylluDamos</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="database">aylludemos.db</string>
+    <string name="app">aylludemos</string>
+    <string name="package_app">com.adyl.aylludemos.beans</string>
+    <string name="google_maps_key">AIzaSyCeXC5BbUayc9mbe82PsNMnXoPc-SQ0YvI</string><!--AIzaSyCO54Zf0NGfeexzjnEl2IDSgy8G44JM9g0-->
+    <!--AIzaSyDaWj86j40i_d2P4BpFQXmRA0BS0db5aC0-->
+
+    <string name="url_conexion">http://ticaperu.com.pe/aylludame/public/api/</string>
+    <!--string name="url_conexion">http://184.171.250.42/~miappinv/incidencias/public/api/</string-->
+    <string name="url_incidencias">listarIncidencias</string>
+    <string name="url_logeo">login</string>
+    <string name="url_urbanizacion">listarUrbanizaciones</string>
+    <string name="url_urbanizacion_alcalde">listarUrbanizaciones/alcalde</string>
+    <string name="url_registrar_usuario">registrarUsuario</string>
+    <string name="url_nivelesagua">listarnivelagua</string>
+    <string name="url_tiposobstaculo">listartipoobstaculo</string>
+    <string name="url_configuraciones">listarConfiguracion</string>
+    <string name="url_registrar_incidencia">registrarIncidencia</string>
+    <string name="url_registrar_media">registrarMediaIncidente</string>
+    <string name="url_actualizar_datos">actualizarPersona</string>
+    <string name="url_actualizar_password">actualizarContrasena</string>
+    <string name="url_directorio">listardirectorio</string>
+    <string name="url_validar">estadopersona</string>
+    <string name="url_familia">listarfamiliarespersona</string>
+    <string name="url_familia_delte">eliminarfamiliar</string>
+    <string name="url_familia_nueva">registrarfamiliar</string>
+    <string name="url_registrar_ubicacion">registrarUbicacionFamiliar</string>
+    <string name="url_listar_ubicacion">ListarUbicacionFamiliar/</string>
+    <string name="url_incidencia_sinconfirmar">listarIncidenciasSinConfirmar/alcalde/</string>
+    <string name="url_incidencia_validadas">listarIncidenciasValidadas/alcalde/</string>
+    <string name="url_incidencia_responder">actualizarAtencionIncidente</string>
+    <string name="url_incidencia_id">listarIncidencias/</string>
+    <string name="url_incidencia_estado">listarIncidencias/estado/1-2-4</string>
+    <string name="url_recuperar_contra">recuperarcontrasena</string>
+
+    <string name="parametro_evento">evento</string>
+
+    <string name="parametro_service_correo">correo</string>
+    <string name="parametro_service_email">email</string>
+    <string name="parametro_service_pass">password</string>
+    <string name="parametro_service_token">token</string>
+    <string name="parametro_service_nuevopass">new_password</string>
+    <string name="parametro_service_paterno">ape_paterno</string>
+    <string name="parametro_service_materno">ape_materno</string>
+    <string name="parametro_service_nombre">nombres</string>
+    <string name="parametro_service_dni">dni</string>
+    <string name="parametro_service_telefono">telefono</string>
+    <string name="parametro_service_direccion">direccion</string>
+    <string name="parametro_service_idurba">id_urbanizacion</string>
+    <string name="parametro_service_idpersona">id_persona</string>
+    <string name="parametro_service_idfamilia">id_familiar</string>
+    <string name="parametro_service_latitud">latitude</string>
+    <string name="parametro_service_longitud">longitude</string>
+    <string name="parametro_service_descripcion">descripcion</string>
+
+
+    <!-- registro de incidencia -->
+    <string name="param_servc_fecha">fecha</string>
+    <string name="param_servc_descripcion">descripcion</string>
+    <string name="param_servc_direccion">direccion</string>
+    <string name="param_servc_latitud">latitud</string>
+    <string name="param_servc_longitud">longitud</string>
+    <string name="param_servc_imagen_file">imagen_file</string>
+    <string name="param_servc_urb">urbanizacion_id</string>
+    <string name="param_servc_persona">persona_id</string>
+    <string name="param_servc_estado_incidente">estado_incidente_id</string>
+    <string name="param_servc_tipo_incidente">tipo_incidente_id</string>
+    <string name="param_servc_tipo_inundacion">inundacion</string>
+    <string name="param_servc_nivel_agua">nivel_agua_id</string>
+    <string name="param_servc_calle_obstaculo">calle_obstaculo</string>
+    <string name="param_servc_tipo_obstaculo">tipo_obstaculo_id</string>
+    <string name="param_servc_media">media</string>
+    <string name="param_servc_tipo_media">tipo_media</string>
+    <string name="param_servc_media_file">media_file</string>
+    <string name="param_servc_incid_media_name">incidente_media_name</string>
+    <string name="param_servc_id_incidente">id_incidente</string>
+    <string name="param_servc_tipousuario">tipo_usuario</string>
+
+
+    <string name="itemIncidentes">Incidentes</string>
+    <string name="itemPerfil">Perfil</string>
+    <string name="itemNuevoIncidente">Nuevo Incidente</string>
+    <string name="itemMisIncidentes">Mis Incidentes</string>
+    <string name="itemFamilia">Mi Familia</string>
+    <string name="itemDirectorio">Números de Emergencia</string>
+    <!--<string name="itemDirectorio">Directorio</string>-->
+    <string name="itemValidarIncidente">Validar Incidente</string>
+    <string name="itemRegistrarUbicacion">Registrar Ubicación</string>
+    <string name="itemSugerencias">Sugerencias</string>
+    <string name="itemSalir">Salir</string>
+
+    <string name="btnDetalles">MÁS DETALLES</string>
+    <string name="tvIncidencias">INCIDENCIAS</string>
+    <string name="textTelefono">Número de teléfono</string>
+    <string name="textEmail">Email</string>
+    <string name="textPassActual">Password Actual</string>
+    <string name="textPassNuevo">Password Nuevo</string>
+    <string name="textPassRepetir">Repetir Password</string>
+    <string name="textPass">Password</string>
+    <string name="textRepetirPass">Repetir Password</string>
+    <string name="textNombres">Nombres</string>
+    <string name="textApellidosPa">Apellido Paterno</string>
+    <string name="textApellidosMa">Apellido Materno</string>
+    <string name="textDni">DNI</string>
+    <string name="textDireccion">Dirección</string>
+    <string name="textTerritorio">Territorio Vecinal</string>
+    <string name="textUrbanizacion">Urbanización</string>
+    <string name="textSiguiente">Siguiente</string>
+    <string name="textIngresar">Ingresar</string>
+    <string name="textActualizar">Actualizar</string>
+    <string name="textSeccion">Iniciar sesión.</string>
+
+    <string name="error_invalid_password">Ingrese la contraseña</string>
+    <string name="error_invalid_email">Ingrese su correo</string>
+    <string name="error_internet">No hay conexión a internet.</string>
+
+    <!--ImagenView-->
+    <string name="develope">Developed By </string>
+    <string name="adyl">AD y L Consulting - 2018</string>
+
+    <string name="v_titulo">. Título:</string>
+    <string name="v_fecha">. Fecha:</string>
+    <string name="v_usuario">. Usuario:</string>
+    <string name="v_descripcion">. Descripción:</string>
+    <string name="v_message">. Descripción:</string>
+    <string name="v_nivel">. Nivel de Agua:</string>
+    <string name="v_obstaculo">. Obstaculo:</string>
+    <string name="v_direccion">. Dirección:</string>
+    <string name="v_urbanizacion">. Urbanización:</string>
+    <string name="v_terrirotio">. Territorio Vecinal:</string>
+    <string name="v_media">Imágenes y Videos :</string>
+
+    <string name="pref_firebase_instance_id_key">pref_firebase_instance_id</string>
+    <string name="pref_firebase_instance_id_default_key">default</string>
+
+
+    <string name="msj_activar_gps">Para seleccionar su ubicación en el mapa, primero debe habilitar los servicios de ubicación y GPS</string>
+    <string name="textUsuario">Usuario</string>
+    <string name="forget_password_text">Olvide mi contraseña</string>
+    <string name="register_text">Registrate</string>
+    <string name="registrar_incidencia">REGISTRAR INCIDENCIA</string>
+    <string name="continuar">CONTINUAR</string>
+    <string name="registrar_ubicaci_n">REGISTRAR UBICACIÓN</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="regresar">REGRESAR</string>
+
+
+</resources>

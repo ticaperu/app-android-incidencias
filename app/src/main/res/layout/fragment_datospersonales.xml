@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            style="@style/TabWidgetTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    style="@style/TabWidgetTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textAlignment="center" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llPerfil"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/llCabezera"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:background="@drawable/menu"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tvTipo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/white"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold|normal" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/llFoto"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="30dp"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:gravity="center">
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:id="@+id/cvFoto"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_gravity="center"
+                                            android:visibility="visible"
+                                            android:background="@drawable/cv_fondo"
+                                            app:civ_border_color="@color/colorPrimary"
+                                            app:civ_border_overlay="true"
+                                            app:civ_border_width="2dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/llCuerpo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_below="@+id/llFoto"
+                                        android:orientation="vertical">
+
+                                        <android.support.v4.widget.NestedScrollView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/tvNombre"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:padding="3dp"
+                                                        android:text=""
+                                                        android:textAlignment="center"
+                                                        android:textColor="@color/colorPrimary"
+                                                        android:textSize="20dp"
+                                                        android:textStyle="bold|normal" />
+
+                                                    <TextView
+                                                        android:id="@+id/tvNivel"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:padding="3dp"
+                                                        android:text="(NIVEL BRONCE)"
+                                                        android:textAlignment="center"
+                                                        android:textColor="@color/colorAccent"
+                                                        android:textSize="12dp"
+                                                        android:textStyle="bold|normal" />
+
+                                                    <TextView
+                                                        android:id="@+id/tvPuntos"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:padding="5dp"
+                                                        android:text="12"
+                                                        android:textAlignment="center"
+                                                        android:textColor="@color/colorAccent"
+                                                        android:textSize="32dp"
+                                                        android:textStyle="bold|normal" />
+
+                                                    <View
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/view"
+                                                        android:layout_marginEnd="45dp"
+                                                        android:layout_marginStart="45dp"
+                                                        android:background="@color/colorPrimary" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:padding="5dp"
+                                                        android:text="Incidencias Reportadas:"
+                                                        android:textAlignment="center"
+                                                        android:textColor="@color/colorPrimary"
+                                                        android:textSize="12dp"
+                                                        android:textStyle="bold|normal" />
+
+                                                    <RelativeLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center">
+
+                                                        <TextView
+                                                            android:id="@+id/tvIncidencias"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:padding="5dp"
+                                                            android:text="0"
+                                                            android:textAlignment="center"
+                                                            android:textColor="@color/colorAccent"
+                                                            android:textSize="22dp"
+                                                            android:layout_marginStart="20dp"
+                                                            android:layout_gravity="center"
+                                                            android:textStyle="bold|normal" />
+
+                                                        <ImageView
+                                                            android:layout_width="25dp"
+                                                            android:layout_height="25dp"
+                                                            android:src="@drawable/senial"
+                                                            android:layout_toEndOf="@+id/tvIncidencias"
+                                                            android:layout_gravity="center|top"/>
+                                                    </RelativeLayout>
+
+
+                                                    <View
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="@dimen/view"
+                                                        android:layout_marginEnd="45dp"
+                                                        android:layout_marginStart="45dp"
+                                                        android:background="@color/colorPrimary" />
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:orientation="horizontal"
+                                                    android:layout_margin="15dp">
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_weight="1"
+                                                        android:orientation="vertical">
+                                                        <ImageView
+                                                            android:layout_width="30dp"
+                                                            android:layout_height="30dp"
+                                                            android:src="@drawable/poratender"
+                                                            android:layout_gravity="center"/>
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="Incidencias validadas"
+                                                            android:textColor="@color/colorPrimary"
+                                                            android:textSize="11dp"
+                                                            android:textAlignment="center"/>
+                                                        <TextView
+                                                            android:id="@+id/tvPorAtender"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="0"
+                                                            android:textStyle="bold"
+                                                            android:textAlignment="center"/>
+                                                    </LinearLayout>
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_weight="1"
+                                                        android:orientation="vertical">
+                                                        <ImageView
+                                                            android:layout_width="30dp"
+                                                            android:layout_height="30dp"
+                                                            android:src="@drawable/atendida"
+                                                            android:layout_gravity="center"/>
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="Incidencias atendidas"
+                                                            android:textColor="@color/colorPrimary"
+                                                            android:textSize="11dp"
+                                                            android:textAlignment="center"/>
+                                                        <TextView
+                                                            android:id="@+id/tvAtendidas"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="0"
+                                                            android:textStyle="bold"
+                                                            android:textAlignment="center"/>
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+
+                                        </android.support.v4.widget.NestedScrollView>
+
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!---->
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <include
+                                layout="@layout/include_actualizar_datos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </ScrollView>
+                    </LinearLayout>
+                    <!--fin-->
+                    <LinearLayout
+                        android:id="@+id/tab2"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+                           <include
+                               layout="@layout/include_actualizar_contrasenia"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent" />
+                       </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+    </LinearLayout>
+
+</FrameLayout>

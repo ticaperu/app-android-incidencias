@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Item_Incidentes"
+            android:icon="@drawable/ic_incidente"
+            android:title="@string/itemIncidentes" />
+        <item
+            android:id="@+id/Item_Perfil"
+            android:icon="@drawable/ic_perfil"
+            android:title="@string/itemPerfil"/>
+        <item
+            android:id="@+id/Item_NuevoIncidente"
+            android:icon="@drawable/ic_nuevo_incidente"
+            android:title="@string/itemNuevoIncidente" />
+        <item
+            android:id="@+id/Item_MisIncidentes"
+            android:icon="@drawable/ic_incidente"
+            android:title="@string/itemMisIncidentes" />
+        <item
+            android:id="@+id/Item_MiFamilia"
+            android:icon="@drawable/ic_familia"
+            android:title="@string/itemFamilia" />
+        <item
+            android:id="@+id/Item_Directorio"
+            android:icon="@drawable/ic_directorio"
+            android:title="@string/itemDirectorio" />
+        <item
+            android:id="@+id/Item_ValidarIncidente"
+            android:icon="@drawable/ic_validar"
+            android:title="@string/itemValidarIncidente" />
+
+        <item
+            android:id="@+id/Item_RegistrarUbicacion"
+            android:icon="@drawable/ic_gps"
+            android:title="@string/itemRegistrarUbicacion" />
+
+        <item
+            android:id="@+id/Item_Sugerencias"
+            android:icon="@drawable/sugerencias"
+            android:title="@string/itemSugerencias" />
+
+        <item
+            android:id="@+id/Item_Salir"
+            android:icon="@android:drawable/ic_menu_zoom"
+            android:title="@string/itemSalir" />
+
+    </group>
+
+
+</menu>
